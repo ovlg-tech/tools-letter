@@ -20,9 +20,9 @@ $(function () {
 
         setTimeout(function () {
             $('[letter-breadcrumb]').html(letterLayout.data('breadcrumb'));
-        }, 300);
+        }, 500);
 
-    }, 300);
+    }, 500);
 
 })
 
