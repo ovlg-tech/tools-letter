@@ -1,0 +1,40 @@
+<div class="sample-letters-container">
+    <!-- <h1>Letter content</h1> -->
+    <div class="letter-heading"> If you have become delinquent on your payments, you can request an alternative payment
+        plan from your creditor , so you can pay off your obligation. Here is a sample of a letter to request an
+        alternative payment plan from your creditor.</div>
+
+    <form action="/convert-html-to-pdf-with-fpdf/actionpdf.php" id="download_letters" method="post">
+        <div id="letters_input" style="padding: 8px;"><br><br><input class="letter_input_box" placeholder="Your Name"
+                type="text" value=""><br><input class="letter_input_box" placeholder="Address" type="text"
+                value=""><br><input class="letter_input_box" placeholder="City" type="text" value=""> <input
+                class="letter_input_box" placeholder="State" type="text" value="">, <input class="letter_input_box"
+                placeholder="Zip" type="text" value=""><br><input class="letter_input_box" placeholder="Home Phone"
+                type="text" value=""><br><br><br><input class="letter_input_box" placeholder="Creditor's Name"
+                type="text" value=""><br><input class="letter_input_box" placeholder="Creditor's  address" type="text"
+                value=""><br><input class="letter_input_box" placeholder="City" type="text" value=""> <input
+                class="letter_input_box" placeholder="State" type="text" value="">, <input class="letter_input_box"
+                placeholder="Zip" type="text" value=""><br><input class="letter_input_box" placeholder="Date"
+                type="text" value=""><br><br>&nbsp;<p>Dear <input class="letter_input_box" placeholder="Sir/Madam"
+                    type="text" value="">,</p> Re: <input class="letter_input_box" placeholder="Creditor's A/c Number"
+                type="text" value=""><br><br>This is a request for a temporary change in the repayment terms in the
+            account referenced
+            above.<br><br>As I am undergoing some financial crises at present, I may not be able to continue the current
+            payment plan. On reviewing my financial condition and my monthly budget, I found it absolutely necessary to
+            request an alternative payment plan from each of my creditors until my financial state improves.<br><br>I do
+            not
+            plan to file for bankruptcy nor default on this debt. So, I would appreciate if you co-operate in making
+            this
+            payment plan effective.<br><br>I request that you accept a monthly payment of $<input
+                class="letter_input_box" type="text" value=""> instead of the regular payment of $ <input
+                class="letter_input_box" type="text" value=""> that I have been making every month.<br><br>I will begin
+            making regular monthly payments as soon
+            as I recover from this financial crisis.<br><br>I hope you will understand my situation and consider my
+            request.
+            I will definitely inform you of any change in my financial situation. I am looking forward to your kind
+            co-operation.<br><br>Sincerely,<br><br>Your Signature_______________________<br><br>Your
+            Name__________________________<br>&nbsp;</div><!-- Below div and hidden  required for pdf generation-->
+        <div id="letter_text_print_div">&nbsp;</div><input id="letter_content_value" name="letter_content_value"
+            type="hidden" value=""> <input id="title_letters" name="title_letters" type="hidden" value="">&nbsp;
+    </form>
+</div>

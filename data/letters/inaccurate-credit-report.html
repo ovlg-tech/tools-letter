@@ -1,0 +1,41 @@
+<div class="sample-letters-container">
+    <!-- <h1>Letter content</h1> -->
+    <div class="letter-heading"> If your credit report is showing inaccurate information and you need to get it removed,
+        then you should request that the credit bureaus to delete the incorrect details from your credit report. Here is
+        a sample of a letter that will help you understand how you should request that the credit bureaus remove
+        inaccurate information from your credit report:</div>
+
+
+    <form action="/convert-html-to-pdf-with-fpdf/actionpdf.php" id="download_letters" method="post">
+        <div id="letters_input" style="padding: 8px;"><br><br><input class="letter_input_box" placeholder="Your Name"
+                type="text" value=""><br><input class="letter_input_box" placeholder="Address" type="text"
+                value=""><br><input class="letter_input_box" placeholder="City" type="text" value=""> <input
+                class="letter_input_box" placeholder="State" type="text" value="">, <input class="letter_input_box"
+                placeholder="Zip" type="text" value=""><br><input class="letter_input_box" placeholder="Home Phone"
+                type="text" value=""><br><br><br><input class="letter_input_box" placeholder="Name of the Credit Bureau"
+                style="width:200px;" type="text" value=""><br><input class="letter_input_box"
+                placeholder="Credit Bureau's Address" type="text" value=""><br><input class="letter_input_box"
+                placeholder="City" type="text" value=""> <input class="letter_input_box" placeholder="State" type="text"
+                value="">, <input class="letter_input_box" placeholder="Zip" type="text" value=""><br><input
+                class="letter_input_box" placeholder="Date" type="text" value=""><br><br>&nbsp;<p>Dear <input
+                    class="letter_input_box" placeholder="Sir/Madam" type="text" value="">,</p><br><br>I would like you
+            to
+            remove all the inaccurate and misleading information from my credit report. These inaccurate details have
+            adversely affected my credit worthiness and hampered my chances of acquiring new credit.<br><br>Under the
+            provisions of the Fair Credit Reporting Act (FCRA), I demand that the following items in my credit report be
+            re-verified and removed:<br>&nbsp;<ul>
+                <li>Creditor's Name: [Creditor Name]</li>
+                <li>Account Number: [Creditor Account]</li>
+                <li>Comment: [Enter comments about the Creditor]</li>
+            </ul> I have attached the proof that the above items are inaccurate for your convenience.<br><br>Under the
+            FCRA,
+            you must re-verify the items and get them removed within 30 business days of receipt of this letter, to
+            avoid
+            violation of the law. Please notify me of the changes and forward me the updated copy of my credit report to
+            the
+            address referenced above.<br><br>Sincerely,<br><br>[Your Signature]<br><br>[Your Name]<br>&nbsp;</div>
+        <!-- Below div and hidden  required for pdf generation-->
+        <div id="letter_text_print_div">&nbsp;</div><input id="letter_content_value" name="letter_content_value"
+            type="hidden" value=""> <input id="title_letters" name="title_letters" type="hidden" value="">&nbsp;
+    </form>
+</div>
