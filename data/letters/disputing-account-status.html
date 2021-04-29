@@ -1,0 +1,45 @@
+<div class="sample-letters-container">
+    <!-- <h1>Letter content</h1> -->
+    <div class="letter-heading">Under the Fair Credit Reporting Act, credit bureaus must correct any incorrect
+        information on your credit report within a period of 30 days of your notification to the bureaus. If you find an
+        inaccurate listing on your credit report, you should notify the credit bureaus about it and get it corrected.
+        Here is a sample letter to dispute the status of your account: </div>
+
+    <form action="/convert-html-to-pdf-with-fpdf/actionpdf.php" id="download_letters" method="post">
+        <div id="letters_input" style="padding: 8px;"><br><br><input class="letter_input_box" placeholder="Your Name"
+                type="text" value=""><br><input class="letter_input_box" placeholder="Address" type="text"
+                value=""><br><input class="letter_input_box" placeholder="City" type="text" value=""> <input
+                class="letter_input_box" placeholder="State" type="text" value="">, <input class="letter_input_box"
+                placeholder="Zip" type="text" value=""><br><input class="letter_input_box" placeholder="Home Phone"
+                type="text" value=""><br><br><br><input class="letter_input_box" placeholder="Name of the Credit Bureau"
+                type="text" value=""><br><input class="letter_input_box" placeholder="Credit Bureau's address"
+                type="text" value=""><br><input class="letter_input_box" placeholder="City" type="text" value=""> <input
+                class="letter_input_box" placeholder="State" type="text" value="">, <input class="letter_input_box"
+                placeholder="Zip" type="text" value=""><br><input class="letter_input_box" placeholder="Date"
+                type="text" value=""><br><br>Dear <input class="letter_input_box" placeholder="Sir/Madam" type="text"
+                value="">,<br>Re:
+            <input class="letter_input_box"
+                placeholder="Mention the names of creditors and the respective Account numbers" type="text"
+                value=""><br><br>This letter is to dispute the incorrect account status on my credit
+            report.<br><br>The above stated accounts are listed as [mention the status in the present credit report] on
+            the
+            credit report. However, they should be shown on my credit report as <input class="letter_input_box"
+                placeholder="status that your account should show" type="text" value="">.<br><br>This incorrect listing
+            has
+            damaged my credit score and questioned my credit worthiness to the extent that I was wrongfully denied
+            credit
+            for a <input class="letter_input_box" placeholder="type of credit that you were denied" type="text"
+                value="">.
+            It was extremely embarrassing and has adversely affected my reputation.<br>&nbsp;<p>For your reference, I
+                have
+                attached copies of the required documents that corroborate my claim.<br><br>Please take a note of the
+                dates
+                and update my account status at the earliest convenience. Also forward a copy of my updated credit
+                report to
+                my address, stated above.<br><br>Sincerely,<br><br>Your Signature_____________________<br><br>Your
+                Name________________________<br>&nbsp;</p>
+        </div><!-- Below div and hidden  required for pdf generation-->
+        <div id="letter_text_print_div">&nbsp;</div><input id="letter_content_value" name="letter_content_value"
+            type="hidden" value=""> <input id="title_letters" name="title_letters" type="hidden" value="">&nbsp;
+    </form>
+</div>

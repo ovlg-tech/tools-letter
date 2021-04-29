@@ -1,200 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>ovlg letters</title>
 
-<head>
-	<title>Debt settlement offer</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="asset/js/jquery-2.2.4.js"></script>
+<script src="asset/lib/bootstrap3.3.5/dist/js/bootstrap.min.js"></script>
+<script src="asset/js/custom.js"></script>
 
-	<style>
-		.blankHeader {
-			padding: 20px 0 20px 0;
-			box-shadow: rgb(239, 239, 239) 0px 10px 10px;
-			border-bottom: 1px solid #ddd;
-			margin-bottom: 50px;
-			text-align: center
-		}
+<link rel="stylesheet" href="asset/lib/bootstrap3.3.5/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="asset/lib/bootstrap3.3.5/dist/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="asset/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="asset/css/custom.css">
 
-		.blankHeader h1 {
-			margin: 0 auto;
-			line-height: 1;
-			font-size: 2.85rem;
-			font-family: 'EB Garamond', serif;
-			margin-top: 5px;
-		}
+<body class="html front not-logged-in no-sidebars">
 
-		h2.template_heading {
-			font-size: 17px;
-			margin: 25px 0 0 0;
-			background: #f4f4f4;
-			padding: 8px 14px;
-			border: 1px solid #ddd;
-			border-bottom: none;
-			border-radius: 5px 5px 0 0;
-			color: #555;
-			line-height: 1.5em;
-		}
+    <div data-layout="letter-layout" data-title="Letter confirming acceptance of a verbal offer"
+        data-breadcrumb="Letter confirming acceptance of a verbal offer" data-content-file="acceptance-of-verbal-offer">
+    </div>
 
-		.letter_input_box {
-			border: none;
-			border-bottom: 2px dashed #bbb !important;
-			background: none;
-			border-radius: 0;
-			max-width: 200px;
-			display: inline-block;
-			border-top: none !important;
-			box-shadow: none;
-			padding: 6px 2px;
-		}
-
-		.mail_template form,
-		.mail_template form .form-control {
-			font-size: 17px;
-		}
-
-		.mail_template form {
-			border: 1px solid #ddd;
-			padding: 10px 20px;
-			border-radius: 0 0 5px 5px;
-			box-shadow: rgb(239 239 239) 0px 10px 10px;
-			line-height: 1.8em;
-			color: #444;
-			font-family: 'Open Sans', sans-serif;
-			margin: 0 0 40px 0;
-		}
-
-		.mail_template form>.row {
-			margin: 13px 0;
-		}
-
-		.mail_template form p {
-			margin: 15px 0;
-		}
-
-		.blankFooter {
-			background: #f4f4f4;
-			color: #4a1500;
-			padding: 20px;
-			margin-bottom: 0;
-			text-align: center;
-			position: relative;
-		}
-
-		.blankBTT {
-			position: absolute;
-			right: 100px;
-			bottom: 15px;
-		}
-
-		.blankBTT i {
-			width: 30px;
-			height: 30px;
-			color: #4a1500;
-		}
-
-		.breadcrumb {
-			box-shadow: rgb(239 239 239) 0px 4px 4px;
-			border: 1px solid #ddd;
-		}
-	</style>
-</head>
-
-<body>
-
-	<header id="studyheader" class="blankHeader">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-2"> <a href="/"><img class="img-responsive"
-							src="https://www.ovlg.com/sites/all/themes/ovlg_bootstrap/ovlg/images/logo.png"
-							alt="OVLG logo" /></a> </div>
-				<h1 class="col-md-8">Letter confirming Acceptance of Verbal Offer</h1>
-				<div class="col-md-2">&nbsp;</div>
-			</div>
-		</div>
-	</header>
-
-	<div class="container">
-		<section class="mail_template">
-			<div class="row">
-				<div class="col-md-12 ">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="https://www.ovlg.com">Home</a></li>
-							<li class="breadcrumb-item"><a href="https://www.ovlg.com/letters">Sample Letters</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Letter confirming Acceptance of
-								Verbal Offer</li>
-						</ol>
-					</nav>
-					<h2 class="template_heading">A Letter of Acceptance of Verbal Debt Settlement Offer is the written
-						confirmation of the deal
-						you have negotiated with your creditor/debt collection agency verbally.
-						You must get it signed by the creditor or collection agency before you pay on any settlement
-						agreement.
-						If you are not sure about what a Letter of Acceptance should look like,
-						here is a sample that will help you understand how to write the letter:</h2>
-
-					<form action="/convert-html-to-pdf-with-fpdf/actionpdf.php" id="download_letters" method="post">
-						<div id="letters_input" style="padding: 8px;"><br><br><input class="letter_input_box"
-								placeholder="Your Name" type="text" value=""><br><input class="letter_input_box"
-								placeholder="Address" type="text" value=""><br><input class="letter_input_box"
-								placeholder="City" type="text" value=""> <input class="letter_input_box"
-								placeholder="State" type="text" value="">, <input class="letter_input_box"
-								placeholder="Zip" type="text" value=""><br><input class="letter_input_box"
-								placeholder="Home Phone" type="text" value=""><br><br><br><input
-								class="letter_input_box" placeholder="Creditor's Name" type="text" value=""><br><input
-								class="letter_input_box" placeholder="Creditor's  address" type="text"
-								value=""><br><input class="letter_input_box" placeholder="City" type="text" value="">
-							<input class="letter_input_box" placeholder="State" type="text" value="">, <input
-								class="letter_input_box" placeholder="Zip" type="text" value=""><br><input
-								class="letter_input_box" placeholder="Date" type="text" value=""><br><br>&nbsp;<p>Dear
-								Creditor,</p> Re: <input class="letter_input_box" placeholder="Creditor's A/c Number"
-								type="text" value=""><br><br>This is in response to verbal debt settlement agreement
-							made between myself and your customer service representative <input class="letter_input_box"
-								placeholder="Name of customer service representative" type="text" value="" widht="50">
-							on <input class="letter_input_box" placeholder="date" type="text" value="">. I appreciate
-							that your company is willing to work with me in settling the debts I owe.<br><br>This letter
-							is to confirm my acceptance of the verbal offer.<br><br>The amount that your representative
-							and I have mutually agreed upon to settle the debt in full is $<input
-								class="letter_input_box" type="text">.<br><br>I earnestly request you to take into
-							account the fact that your representative and I have agreed to eliminate interest rates and
-							penalties related to this account. I also request you to co-ordinate with the credit bureaus
-							and eliminate all the negative markings related to this account.<br><br>I hope the above
-							terms acceptable will be acceptable to you. If they are, please sign this letter and return
-							a copy to me.<br><br>I will send the settlement amount to you through a money order as soon
-							as I receive the signed and acknowledged agreement from you.<br><br>Sincerely,<br><br>Your
-							Signature_____________________<br><br>Your Name________________________<br>&nbsp;</div>
-						<!-- Below div and hidden  required for pdf generation-->
-						<div id="letter_text_print_div">&nbsp;</div><input id="letter_content_value"
-							name="letter_content_value" type="hidden" value=""> <input id="title_letters"
-							name="title_letters" type="hidden" value="">&nbsp;
-					</form>
-
-
-				</div>
-			</div>
-		</section>
-	</div>
-
-	<footer class="blankFooter">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">© 2021 Oak View Law Group. All Rights Reserved</div>
-				<div class="blankBTT"><i class="fa fa-arrow-circle-up font-size-28"
-						onclick="fnScrollElm('studyheader')"></i></div>
-			</div>
-		</div>
-	</footer>
-
-	<script>
-		function fnScrollElm(elm) {
-			jQuery('html, body').animate({
-				scrollTop: jQuery("#" + elm).offset().top
-			}, 2000);
-		}
-	</script>
 </body>
 
 </html>
