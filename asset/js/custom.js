@@ -6,6 +6,10 @@ $(function () {
 
     console.log(letterLayout.data('content-file'));
 
+    jQuery.get('layout/head.html', function (data) {
+        $("head").append(data);
+    });
+
     setTimeout(function () {
         var includes = $('[data-include]')
         $.each(includes, function () {
