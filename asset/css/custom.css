@@ -22,7 +22,7 @@ body.navbar-is-fixed-top {
 }
 
 .ovlg-sample-letters-banner {
-    background: url(/asset/images/ovlg-letters-banner.jpg);
+    background: url(/letters/asset/images/ovlg-letters-banner.jpg);
     background-position-x: 0%;
     background-position-y: 0%;
     background-repeat: repeat;
@@ -271,7 +271,68 @@ ul li {
     background: #fff;
     border: #dbdbdb solid 1px;
 }
+.togglesearch::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: -8px;
+    right: 4px;
+    background: #fff;
+    transform: rotate(45deg);
+    border-left: #ccc solid 1px;
+    border-right: #fff solid 1px;
+    border-bottom: #fff solid 1px;
+    border-top: #ccc solid 1px;
+}
 
+.search button {
+    cursor: pointer;
+    content: "e618" !important;
+    color: #fff !important;
+    padding: 5px 9px 8px 9px !important;
+    border-radius: 0;
+    border: #4A1500 solid 2px;
+}
+.search button, .search button:active {
+    background: #4A1500 !important;
+}
+
+.togglesearch input[type=text] {
+    float: left;
+    width: 80%;
+    border-radius: 0;
+    background: #fff;
+}
+.search .form-text {
+    opacity: 1;
+    background: rgba(256, 256, 256, 1);
+    height: 39px;
+}
+.search span {
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+
+.form-control {
+    border: 0 solid #ddd;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6) inset;
+}
+
+.togglesearch button {
+    float: left;
+    width: 20%;
+}
+.search button {
+    border: none!important;
+    margin: 0!important;
+    content: "e618"!important;
+    color: #fff!important;
+    padding: 6px 9px!important;
+    border-radius: 0 3px 3px 0!important;
+}
 
 form#search-block-form {
     margin: 0;

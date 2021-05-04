@@ -38,3 +38,51 @@ $(function () {
         $(this).load(file, { name: 'bill' },)
     })
 })*/
+
+
+function download_pdf_and_show() {
+    var content = jQuery(".content").html();
+    content_clone = jQuery(".content").clone();
+
+    /*Replace all input text with div with their values*/
+    jQuery("#letters_input").clone().appendTo("#letter_text_print_div");
+    jQuery("#letter_text_print_div input").replaceWith(function () {
+        return jQuery("<div>" + jQuery(this).val().trim() + "</div>");
+    });
+
+    var lightcontent = jQuery("#letter_text_print_div").html();
+    var title = jQuery("#letters_title").html();
+    lightcontent = lightcontent.replace(/(?:\r\n|\r|\n)/g, "<br />");
+    jQuery("#letter_content_value").val(lightcontent);
+    jQuery("#title_letters").val(title);
+    jQuery("#letter_text_print_div").html(""); // make it empty
+    jQuery("form#download_letters").submit()
+}
+
+function print_and_show() {
+    var content = jQuery(".content").html();
+    content_clone = jQuery(".content").clone();
+
+    /*Replace all input text with div with their values*/
+    jQuery("#letters_input").clone().appendTo("#letter_text_print_div");
+    jQuery("#letter_text_print_div input").replaceWith(function () {
+        return jQuery("<span >" + jQuery(this).val().trim() + "</span>");
+    });
+
+    var lightcontent = jQuery("#letter_text_print_div").html();
+    var title = jQuery("#letters_title").text();
+    jQuery("#letter_content_value").val(lightcontent);
+    jQuery("#title_letters").val(title);
+    jQuery("#letter_text_print_div").html(""); // make it empty
+    var oldPage = document.body.innerHTML;
+    //Reset the pages HTML with divs HTML only
+    document.body.innerHTML = "<html><head><title></title></br></br><p align=center>" +
+        title +
+        "</p></head><body>" +
+        lightcontent +
+        "</body></html>";
+    //Print Page
+    window.print();
+    //Restore orignal HTML
+    document.body.innerHTML = oldPage;
+}
