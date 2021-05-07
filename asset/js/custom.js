@@ -39,6 +39,9 @@ $(function () {
     })
 })*/
 
+function Fnslideup() {
+    jQuery("html, body").animate({ scrollTop: 0 }, 800);
+}
 
 function download_pdf_and_show() {
     var content = jQuery(".content").html();
